@@ -10,8 +10,8 @@
 	<xsl:template match="/">
 		<html>
 			<head>
-				<title><xsl:copy-of select=".//заголовок//text()" /></title>
-				<meta name="description" content="{.//текст/node()}" />
+				<title>XSLT: <xsl:copy-of select=".//заголовок//text()" /></title>
+				<meta name="description" content="XSLT: {.//текст/node()}" />
 			</head>
 			<body>
 				<h1><xsl:copy-of select=".//заголовок/node()" /></h1>
