@@ -6,6 +6,12 @@
 	<xsl:output method="html"/>
 	<xsl:include href="../style.xslt"/>
 	
+	<xsl:template name="list-xsl">
+		<xsl:for-each select="document('../style.xslt') | document('')">
+			<xsl:call-template name="print-xsl"/>
+		</xsl:for-each>
+	</xsl:template>
+	
 	<xsl:template name="index">
 		<a href="../index.html">Список тестовых страниц</a>
 	</xsl:template>

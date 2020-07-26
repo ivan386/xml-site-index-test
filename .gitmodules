@@ -1,0 +1,3 @@
+[submodule "xml-to-string"]
+	path = xml-to-string
+	url = https://github.com/ivan386/xml-to-string.git
