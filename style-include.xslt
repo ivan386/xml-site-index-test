@@ -3,7 +3,6 @@
   version="1.0"
   xmlns="http://www.w3.org/1999/xhtml"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-	<xsl:output method="xml"/>
 	<xsl:include href="xml-to-string/xml-to-string.xsl"/>
 	
 	<xsl:param name="test">
