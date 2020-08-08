@@ -5,33 +5,36 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:include href="xml-to-string/xml-to-string.xsl"/>
 	
-	<xsl:param name="test">
-		<xsl:copy-of select="/" />
-	</xsl:param>
+	<xsl:template match="node()|@*">
+		<xsl:copy>
+			<xsl:apply-templates select="node()|@*" />
+		</xsl:copy>
+	</xsl:template>
+	
 	<xsl:template match="/">
 		<html>
 			<head>
-				<title>XSLT: <xsl:copy-of select=".//заголовок//text()" /> (<xsl:copy-of select=".//тип/node()" /> тип) (<xsl:apply-templates select="/" mode="вывод" /> вывод)</title>
+				<title>XSLT: <xsl:copy-of select=".//заголовок//text()" /> (<xsl:copy-of select=".//тип/node()" /> тип) (<xsl:apply-templates select="/" mode="вывод" /> вывод)&#10;&#10;</title>
 				<meta name="description" content="XSLT: {.//текст/node()}" />
-				<style>
+				<style><xsl:text>
 					code{
 						display: block;
 						white-space: pre;
 						margin: 1em;
-					}
+					}</xsl:text>
 				</style>
 			</head>
 			<body>
 				<xsl:apply-templates select="/" mode="index" />
-				<h1><xsl:copy-of select=".//заголовок/node()" /> (<xsl:copy-of select=".//тип/node()" /> тип) (<xsl:apply-templates select="/" mode="вывод" /> вывод)</h1>
-				<p><xsl:copy-of select=".//текст/node()" /></p>
-				<xsl:text>Для того чтобы увидеть исходный XML нужно вызвать контекстное меню и выбрать пункт "Исходный код страницы". Либо в адресной строке можно добавить 'view-source:' в начале.</xsl:text>
+				<h1><xsl:copy-of select=".//заголовок/node()" /> (<xsl:copy-of select=".//тип/node()" /> тип) (<xsl:apply-templates select="/" mode="вывод" /> вывод)&#10;&#10;</h1>
+				<p><xsl:apply-templates select=".//текст/node()" />&#10;&#10;</p>
+				<xsl:text>Для того чтобы увидеть исходный XML нужно вызвать контекстное меню и выбрать пункт "Исходный код страницы". Либо в адресной строке можно добавить 'view-source:' в начале.&#10;&#10;</xsl:text>
 				
-				<h2>Исходный код XML</h2>
+				<h2>&#10;&#10;Исходный код XML&#10;&#10;</h2>
 				<code class="xml">
 					<xsl:call-template name="xml-to-string"/>
 				</code>
-				<h2>Исходный код XSLT</h2>
+				<h2>&#10;&#10;Исходный код XSLT&#10;&#10;</h2>
 				<xsl:apply-templates select="/" mode="list-xsl"/>
 			</body>
 		</html>
@@ -53,7 +56,4 @@
 		<a href="index.html">Список тестовых страниц</a>
 	</xsl:template>
 	
-	<xsl:template match="/" mode="вывод">
-		<xsl:text>xHTML</xsl:text>
-	</xsl:template>
 </xsl:stylesheet>
