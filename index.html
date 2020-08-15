@@ -3,7 +3,7 @@
 		<title>Тест индексации XML страниц поисковиками</title>
 		<meta name="description" content="Здесь ссылки на страницы теста отображения XML документов в результатах поиска"/>
 		<style>
-			a {
+			body > a {
 				display: block;
 			}
 		</style>
@@ -11,44 +11,63 @@
 	<body>
 		<h1>Тест индексации XML страниц поисковиками</h1>
 		
-		<h2>XML страницы с типом XML трансформируются в xHTML</h2>
+		<p>Это страницы теста отображения <a href="https://ru.wikipedia.org/wiki/XML">XML</a> документов в результатах поиска</p>
+		
+		<h2>Тип XML</h2>
+		
+		<p>Это XML страницы с типом XML
+			<ol>
+				<li>расширение: ".xml"</li>
+				<li>MIME-тип: "application/xml"</li>
+			</ol>
+		</p>
+		
+		<h3>XML страницы с типом XML трансформируются в xHTML</h3>
 		<a href="without-xhtml-tags.xml" title="a-title: XML без xHTML тегов">a-text: XML без xHTML тегов</a>
 		<a href="with-prefixed-xhtml-tags.xml" title="a-title: XML с xHTML тегами с префиксом">a-text: XML с xHTML тегами с префиксом</a>
 		<a href="with-xhtml-fragment.xml" title="a-title: XML c xHTML фрагментом">a-text: XML c xHTML фрагментом</a>
 		<a href="with-xhtml-tags-with-default-namespaces.xml" title="a-title: XML c xHTML тегами c пространством имён поумолчанию">a-text: XML c xHTML тегами c пространством имён поумолчанию</a>
 		
-		<h2>XML страницы с типом XML трансформируются в HTML</h2>
+		<h3>XML страницы с типом XML трансформируются в HTML</h3>
 		<a href="output-html/without-xhtml-tags.xml" title="a-title: XML без xHTML тегов">a-text: XML без xHTML тегов</a>
 		<a href="output-html/with-prefixed-xhtml-tags.xml" title="a-title: XML с xHTML тегами с префиксом">a-text: XML с xHTML тегами с префиксом</a>
 		<a href="output-html/with-xhtml-fragment.xml" title="a-title: XML c xHTML фрагментом">a-text: XML c xHTML фрагментом</a>
 		<a href="output-html/with-xhtml-tags-with-default-namespaces.xml" title="a-title: XML c xHTML тегами c пространством имён поумолчанию">a-text: XML c xHTML тегами c пространством имён поумолчанию</a>
 		
-		<h2>XML страницы с типом XML трансформируются в текст</h2>
+		<h3>XML страницы с типом XML трансформируются в текст</h3>
 		<a href="output-text/without-xhtml-tags.xml" title="a-title: XML без xHTML тегов">a-text: XML без xHTML тегов</a>
 		<a href="output-text/with-prefixed-xhtml-tags.xml" title="a-title: XML с xHTML тегами с префиксом">a-text: XML с xHTML тегами с префиксом</a>
 		<a href="output-text/with-xhtml-fragment.xml" title="a-title: XML c xHTML фрагментом">a-text: XML c xHTML фрагментом</a>
 		<a href="output-text/with-xhtml-tags-with-default-namespaces.xml" title="a-title: XML c xHTML тегами c пространством имён поумолчанию">a-text: XML c xHTML тегами c пространством имён поумолчанию</a>
 		
-		<p>Это страницы теста отображения XML документов в результатах поиска</p>
 		
-		<h2>XML страницы с типом xHTML трансформируются в xHTML</h2>
+		<h2>Тип xHTML</h2>
+		
+		<p>Это XML страницы с типом <a href="https://ru.wikipedia.org/wiki/XHTML">xHTML</a>
+			<ol>
+				<li>расширение: ".xhtml"</li>
+				<li>MIME-тип: "application/xhtml+xml"</li>
+			</ol>
+		</p>
+		
+		<p>Некоторые поисковики не хотят индексировать страницы с XML типом. Я добавил тестовых страниц с XHTML типом но их содержимое простой XML.</p>
+		
+		<h3>XML страницы с типом xHTML трансформируются в xHTML</h3>
 		<a href="without-xhtml-tags.xhtml" title="a-title: XML без xHTML тегов">a-text: XML без xHTML тегов</a>
 		<a href="with-prefixed-xhtml-tags.xhtml" title="a-title: XML с xHTML тегами с префиксом">a-text: XML с xHTML тегами с префиксом</a>
 		<a href="with-xhtml-fragment.xhtml" title="a-title: XML c xHTML фрагментом">a-text: XML c xHTML фрагментом</a>
 		<a href="with-xhtml-tags-with-default-namespaces.xhtml" title="a-title: XML c xHTML тегами c пространством имён поумолчанию">a-text: XML c xHTML тегами c пространством имён поумолчанию</a>
 		
-		<h2>XML страницы с типом xHTML трансформируются в HTML</h2>
+		<h3>XML страницы с типом xHTML трансформируются в HTML</h3>
 		<a href="output-html/without-xhtml-tags.xhtml" title="a-title: XML без xHTML тегов">a-text: XML без xHTML тегов</a>
 		<a href="output-html/with-prefixed-xhtml-tags.xhtml" title="a-title: XML с xHTML тегами с префиксом">a-text: XML с xHTML тегами с префиксом</a>
 		<a href="output-html/with-xhtml-fragment.xhtml" title="a-title: XML c xHTML фрагментом">a-text: XML c xHTML фрагментом</a>
 		<a href="output-html/with-xhtml-tags-with-default-namespaces.xhtml" title="a-title: XML c xHTML тегами c пространством имён поумолчанию">a-text: XML c xHTML тегами c пространством имён поумолчанию</a>
 		
-		<h2>XML страницы с типом xHTML трансформируются в текст</h2>
+		<h3>XML страницы с типом xHTML трансформируются в текст</h3>
 		<a href="output-text/without-xhtml-tags.xhtml" title="a-title: XML без xHTML тегов">a-text: XML без xHTML тегов</a>
 		<a href="output-text/with-prefixed-xhtml-tags.xhtml" title="a-title: XML с xHTML тегами с префиксом">a-text: XML с xHTML тегами с префиксом</a>
 		<a href="output-text/with-xhtml-fragment.xhtml" title="a-title: XML c xHTML фрагментом">a-text: XML c xHTML фрагментом</a>
 		<a href="output-text/with-xhtml-tags-with-default-namespaces.xhtml" title="a-title: XML c xHTML тегами c пространством имён поумолчанию">a-text: XML c xHTML тегами c пространством имён поумолчанию</a>
-		
-		<p>Некоторые поисковики не хотят индексировать страницы с XML типом. Я добавил тестовых страниц с XHTML типом но их содержимое простой XML.</p>
 	</body>
 </html>
