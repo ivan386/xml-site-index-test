@@ -12,6 +12,10 @@
 	</xsl:template>
 	
 	<xsl:template match="/">
+		<xsl:apply-templates select="/" mode="print" />
+	</xsl:template>
+	
+	<xsl:template match="/" mode="print">
 		<html>
 			<head>
 				<title>XSLT: <xsl:copy-of select=".//заголовок//text()" /> (<xsl:copy-of select=".//тип/node()" /> тип) (<xsl:apply-templates select="/" mode="вывод" /> вывод)&#10;&#10;</title>

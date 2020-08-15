@@ -69,5 +69,36 @@
 		<a href="output-text/with-prefixed-xhtml-tags.xhtml" title="a-title: XML с xHTML тегами с префиксом">a-text: XML с xHTML тегами с префиксом</a>
 		<a href="output-text/with-xhtml-fragment.xhtml" title="a-title: XML c xHTML фрагментом">a-text: XML c xHTML фрагментом</a>
 		<a href="output-text/with-xhtml-tags-with-default-namespaces.xhtml" title="a-title: XML c xHTML тегами c пространством имён поумолчанию">a-text: XML c xHTML тегами c пространством имён поумолчанию</a>
+		
+		<h2>Тип HTML</h2>
+		
+		<p>Это XML страницы с типом <a href="https://ru.wikipedia.org/wiki/HTML">HTML</a>
+			<ol>
+				<li>расширение: ".html"</li>
+				<li>MIME-тип: "text/html"</li>
+			</ol>
+		</p>
+		
+		<p>Некоторые поисковики не хотят индексировать страницы и с XHTML типом. Я добавил тестовых страниц с HTML типом но их содержимое также простой XML.</p>
+		
+		<p>Браузер уже воспринимает их не как XML а как HTML. Поэтому в тех XML в которых используются xHTML теги я добавил <code>meta</code> тег <code>refresh</code> который перенапраляет на <code>*.proxy.xml</code>. Задача этой XML'ки загрузить шаблон и передать шаблону имя исходного документа. Шаблон читает исходный документ уже как XML и трансформирует его.</p>
+		
+		<h3>XML страницы с типом HTML трансформируются в xHTML</h3>
+		<a href="html/without-xhtml-tags.html" title="a-title: XML без xHTML тегов">a-text: XML без xHTML тегов</a>
+		<a href="html/with-prefixed-xhtml-tags.html" title="a-title: XML с xHTML тегами с префиксом">a-text: XML с xHTML тегами с префиксом</a>
+		<a href="html/with-xhtml-fragment.html" title="a-title: XML c xHTML фрагментом">a-text: XML c xHTML фрагментом</a>
+		<a href="html/with-xhtml-tags-with-default-namespaces.html" title="a-title: XML c xHTML тегами c пространством имён поумолчанию">a-text: XML c xHTML тегами c пространством имён поумолчанию</a>
+		
+		<h3>XML страницы с типом HTML трансформируются в HTML</h3>
+		<a href="output-html/html/without-xhtml-tags.html" title="a-title: XML без xHTML тегов">a-text: XML без xHTML тегов</a>
+		<a href="output-html/html/with-prefixed-xhtml-tags.html" title="a-title: XML с xHTML тегами с префиксом">a-text: XML с xHTML тегами с префиксом</a>
+		<a href="output-html/html/with-xhtml-fragment.html" title="a-title: XML c xHTML фрагментом">a-text: XML c xHTML фрагментом</a>
+		<a href="output-html/html/with-xhtml-tags-with-default-namespaces.html" title="a-title: XML c xHTML тегами c пространством имён поумолчанию">a-text: XML c xHTML тегами c пространством имён поумолчанию</a>
+		
+		<h3>XML страницы с типом HTML трансформируются в текст</h3>
+		<a href="output-text/html/without-xhtml-tags.html" title="a-title: XML без xHTML тегов">a-text: XML без xHTML тегов</a>
+		<a href="output-text/html/with-prefixed-xhtml-tags.html" title="a-title: XML с xHTML тегами с префиксом">a-text: XML с xHTML тегами с префиксом</a>
+		<a href="output-text/html/with-xhtml-fragment.html" title="a-title: XML c xHTML фрагментом">a-text: XML c xHTML фрагментом</a>
+		<a href="output-text/html/with-xhtml-tags-with-default-namespaces.html" title="a-title: XML c xHTML тегами c пространством имён поумолчанию">a-text: XML c xHTML тегами c пространством имён поумолчанию</a>
 	</body>
 </html>
