@@ -6,8 +6,10 @@
         <!-- все дочерние элементы наследуют это пространство имён -->
         <title>xHTML фрагмент встроен в XML (HTML тип)</title>
         <meta name="description" content="Это XML в котором xHTML фрагмент встроен в XML."/>
-		<meta http-equiv="refresh" content="0; url=with-xhtml-fragment.proxy.xml" />
+		<link rel="stylesheet" href="frame-style.css" xmlns="http://www.w3.org/1999/xhtml"/>
     </head>
+	<!-- добавляем фрейм в котором этот же документ через *.proxy.xml будет обработан как XML -->
+	<iframe xmlns="http://www.w3.org/1999/xhtml" src="with-xhtml-fragment.proxy.xml" />
 	
 	<тип>HTML</тип>
     <!-- элементы вне тега head остаются с пустым пространством имён -->
