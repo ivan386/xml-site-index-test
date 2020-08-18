@@ -15,9 +15,5 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
-	
-	<xsl:template match="/" mode="index">
-		<a href="../../index.html" target="_top">Список тестовых страниц</a>
-	</xsl:template>
 
 </xsl:stylesheet>
