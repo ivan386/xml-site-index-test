@@ -57,7 +57,7 @@
 	</xsl:template>
 	
 	<xsl:template match="/" mode="index">
-		<a href="index.html">Список тестовых страниц</a>
+		<a href="index.xhtml">Список тестовых страниц</a>
 	</xsl:template>
 	
 </xsl:stylesheet>
